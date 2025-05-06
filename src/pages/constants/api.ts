@@ -1,11 +1,7 @@
-import axios, { Axios } from "axios"; // se você quiser criar instâncias específicas
+import axios from 'axios';
 
-const api = Axios.create({
-  baseURL: 'https://api.disneyapi.dev/character',  
-  timeout: 5000,
-  headers: {
-    "Content-Type": "application/json"
-  }
+const api = axios.create({
+  baseURL: 'https://api.disneyapi.dev/character',
 });
 
-export default api;  // exportação padrão
+export default api;
